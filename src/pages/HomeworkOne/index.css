@@ -1,0 +1,18 @@
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    background-color: rgb(244, 179, 179);
+    padding-top: 200px;
+    padding-bottom: 375px;
+
+    .coach {
+        padding-left: 700px;
+        font-size: 35px;
+        letter-spacing: 1px;
+        background-color: #fff;
+        opacity: 1;
+    }
+}
