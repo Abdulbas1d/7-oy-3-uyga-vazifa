@@ -62,23 +62,9 @@ function HomeworkTwo() {
         <h2>Timer</h2>
         <h4>{inputTime !== null ? formatTime(inputTime) : "00:00"}</h4>
         <label htmlFor="time">Biror bir son kiriting!</label>
-        <input
-          value={time}
-          onChange={(e) => setTime(Number(e.target.value))}
-          id='time'
-          name='time'
-          type="number"
-          placeholder='Biror bir son kiriting!'
-          disabled={timerId !== null} 
-        />
+        <input value={time} onChange={(e) => setTime(Number(e.target.value))} id='time' name='time' type="number" placeholder='Biror bir son kiriting!' disabled={timerId !== null} />
         <div className="btns">
-          <button
-            onClick={handleStart}
-            className='btnOne'
-            disabled={timerId !== null}
-          >
-            Start
-          </button>
+          <button onClick={handleStart} className='btnOne' disabled={timerId !== null}>Start</button>
           <button onClick={handleReset} className='btnTwo'>Reset</button>
         </div>
       </form>
